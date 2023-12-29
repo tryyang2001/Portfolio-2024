@@ -1,4 +1,4 @@
-import { Button, Link, Spacer } from "@nextui-org/react";
+import { Button, Link, Spacer, Tooltip } from "@nextui-org/react";
 import Icons from "../common/Icons";
 import { personalInformation } from "@/models/PersonalInformation";
 import Information from "./Information";
@@ -27,24 +27,54 @@ const LeftContactPanel = ({}: Props) => {
             Other Websites
           </h4>
           <div className="flex gap-4 items-center justify-center lg:justify-start mt-4">
-            <Button
-              href="https://www.linkedin.com/in/tanruiyang-nus"
-              target="_blank"
-              as={Link}
-              className="rounded-full text-xl bg-black text-white"
-              isIconOnly
+            <Tooltip
+              content="Linkedin"
+              showArrow
+              placement="bottom"
+              className="bg-clr-grey-5 text-clr-white"
             >
-              <Icons.Linkedin />
-            </Button>
-            <Button
-              href="https://github.com/tryyang2001"
-              target="_blank"
-              as={Link}
-              className="rounded-full text-xl bg-black text-white"
-              isIconOnly
+              <Button
+                href="https://www.linkedin.com/in/tanruiyang-nus"
+                target="_blank"
+                as={Link}
+                className="rounded-full text-xl bg-black text-white"
+                isIconOnly
+              >
+                <Icons.Linkedin />
+              </Button>
+            </Tooltip>
+            <Tooltip
+              content="Github"
+              showArrow
+              placement="bottom"
+              className="bg-clr-grey-5 text-clr-white"
             >
-              <Icons.Github />
-            </Button>
+              <Button
+                href="https://github.com/tryyang2001"
+                target="_blank"
+                as={Link}
+                className="rounded-full text-xl bg-black text-white"
+                isIconOnly
+              >
+                <Icons.Github />
+              </Button>
+            </Tooltip>
+            <Tooltip
+              content="Resume"
+              showArrow
+              placement="bottom"
+              className="bg-clr-grey-5 text-clr-white"
+            >
+              <Button
+                href="https://drive.google.com/file/d/1wanGfOQJ1g48wF_NHP605LgSwqPvzLDu/view?usp=sharing"
+                target="_blank"
+                as={Link}
+                className="rounded-full text-xl bg-black text-white"
+                isIconOnly
+              >
+                <Icons.Pdf />
+              </Button>
+            </Tooltip>
           </div>
         </div>
       </div>

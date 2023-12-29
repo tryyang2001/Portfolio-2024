@@ -1,5 +1,7 @@
 import { experiences } from "@/models/Experience";
 import VisualCard from "./VisualCard";
+import { Button, Link } from "@nextui-org/react";
+import Icons from "../common/Icons";
 
 const AboutMeDescription = () => {
   return (
@@ -9,7 +11,7 @@ const AboutMeDescription = () => {
         <h4 className="text-xl lg:text-2xl font-medium underline">
           Information About Me
         </h4>
-        <p className="text-justify hyphens-auto leading-6 lg:leading-7 text-clr-grey-1 px-2 lg:px-4 py-2 text-medium lg:text-lg">
+        <div className="text-justify hyphens-auto leading-6 lg:leading-7 text-clr-grey-1 px-2 lg:px-4 py-2 text-medium lg:text-lg">
           With 3+ years of programming experience, I possess a strong foundation
           in Python, C#, and TypeScript. My expertise extends to full-stack web
           development and RESTful API development.
@@ -21,7 +23,17 @@ const AboutMeDescription = () => {
           <br />
           Feel free to reach out if you think I am a good fit for your team and
           I am happy to discuss further!
-        </p>
+          <div className="flex justify-end my-5">
+            <Button
+              className="mx-2 bg-clr-secondary text-clr-white font-medium"
+              as={Link}
+              href="https://drive.google.com/file/d/1wanGfOQJ1g48wF_NHP605LgSwqPvzLDu/view?usp=sharing"
+              target="_blank"
+            >
+              Download CV <Icons.ArrowDownToLine />
+            </Button>
+          </div>
+        </div>
       </div>
       {/* Visual Card */}
       <div className="grid grid-cols-2 gap-2 lg:gap-6 px-1 lg:pl-[1.1rem]">

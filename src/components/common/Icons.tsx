@@ -13,11 +13,13 @@ import {
   FaPhone,
   FaLanguage,
   FaLinkedin,
+  FaFilePdf,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { PiCertificateFill } from "react-icons/pi";
 import { BsFillSendFill } from "react-icons/bs";
+import { IoMdMenu } from "react-icons/io";
 
 const Icons = {
   // home button icons
@@ -28,6 +30,7 @@ const Icons = {
   About: CircleUser,
   Projects: Briefcase,
   Contact: MessageSquareMore,
+  Menu: IoMdMenu,
   // project icons
   Github: FaGithub,
   Info: FaInfoCircle,
@@ -39,6 +42,7 @@ const Icons = {
   Phone: FaPhone,
   Language: FaLanguage,
   Linkedin: FaLinkedin,
+  Pdf: FaFilePdf,
   Send: BsFillSendFill,
 };
 

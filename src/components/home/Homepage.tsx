@@ -47,9 +47,10 @@ const Homepage = () => {
             Know more <Icons.ArrowRight />
           </Button>
           <Button
-            as={Link}
-            href="https://drive.google.com/uc?export=download&id=1_tAN-FCwZB_H7DRTBRynAhlAhjPLj8z9"
             className="mx-2 bg-clr-secondary text-clr-white font-medium"
+            as={Link}
+            href="https://drive.google.com/file/d/1wanGfOQJ1g48wF_NHP605LgSwqPvzLDu/view?usp=sharing"
+            target="_blank"
           >
             Download CV <Icons.ArrowDownToLine />
           </Button>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
-import VerticalNavbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/Toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Providers>
           {children}
-          <VerticalNavbar />
+          <Navbar />
           <Toaster />
         </Providers>
       </body>
