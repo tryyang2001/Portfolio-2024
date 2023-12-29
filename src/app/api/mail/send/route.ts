@@ -71,12 +71,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     await transporter.sendMail(mailOptions);
   } catch (error: any) {
-    console.log(
-      process.env.NM_EMAIL,
-      process.env.NM_PASSWORD,
-      process.env.RECEIPIENT_EMAIL
-    );
-    console.log(error);
     return NextResponse.json(
       {
         success: false,

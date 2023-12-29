@@ -11,11 +11,11 @@ const page = ({}: Props) => {
         My <span className="text-clr-secondary">Projects</span>
       </PageTitle>
       <p className="m-6 text-justify text-medium leading-6 lg:leading-7 lg:text-lg">
-        Here are featured projects I've collaborated on, with others not listed
-        too. My strength lies in seamlessly integrating into diverse teams and
-        adapting swiftly to new environments. Most of the showcased projects
-        were team efforts, where I've outlined my contributions. There are more
-        ongoing projects which will be updated upon completion.
+        Here are featured projects I&apos;ve collaborated on, with others not
+        listed too. My strength lies in seamlessly integrating into diverse
+        teams and adapting swiftly to new environments. Most of the showcased
+        projects were team efforts, where I&apos;ve outlined my contributions.
+        There are more ongoing projects which will be updated upon completion.
       </p>
 
       {/* projects */}

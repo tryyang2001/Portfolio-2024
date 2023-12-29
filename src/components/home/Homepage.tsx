@@ -18,7 +18,7 @@ const Homepage = () => {
       {/* Right Self Introduction */}
       <div className="flex flex-col justify-center text-lg xl:mr-56 lg:mr-12 col-span-4">
         <h1 className="text-3xl lg:text-5xl font-semibold p-3 text-center">
-          Hi, I'm <span className="text-clr-secondary">Tan Rui Yang</span>.
+          Hi, I&apos;m <span className="text-clr-secondary">Tan Rui Yang</span>.
           <p className="text-xl lg:text-2xl mt-4">
             A Passionate Final Year{" "}
             <span className="text-clr-secondary">Computer Engineering</span>{" "}
@@ -32,9 +32,10 @@ const Homepage = () => {
           <span className="text-clr-nus font-semibold">NUS</span>.
           <Spacer y={2} />
           <div>
-            I'm excited to embark on a journey as a software engineer, drawing
-            from my experiences in web and API development. Feel free to explore
-            my portfolio for a deeper insight into my skills and background!
+            I&apos;m excited to embark on a journey as a software engineer,
+            drawing from my experiences in web and API development. Feel free to
+            explore my portfolio for a deeper insight into my skills and
+            background!
           </div>
         </div>
         <div className="flex justify-end my-4 lg:mt-8">
