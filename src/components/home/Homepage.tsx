@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/image";
+import { Image } from "@nextui-org/react";
 import { Button, Link, Spacer } from "@nextui-org/react";
 import Icons from "../common/Icons";
 
