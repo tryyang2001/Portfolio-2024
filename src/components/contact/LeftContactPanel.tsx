@@ -2,6 +2,7 @@ import { Button, Link, Spacer, Tooltip } from "@nextui-org/react";
 import Icons from "../common/Icons";
 import { personalInformation } from "@/models/PersonalInformation";
 import Information from "./Information";
+import { resumeLink } from "@/models/ResumeLink";
 
 interface Props {}
 
@@ -66,7 +67,7 @@ const LeftContactPanel = ({}: Props) => {
               className="bg-clr-grey-5 text-clr-white"
             >
               <Button
-                href="https://drive.google.com/file/d/1wanGfOQJ1g48wF_NHP605LgSwqPvzLDu/view?usp=sharing"
+                href={resumeLink}
                 target="_blank"
                 as={Link}
                 className="rounded-full text-xl bg-black text-white"
