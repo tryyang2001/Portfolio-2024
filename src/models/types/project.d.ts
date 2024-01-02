@@ -3,6 +3,6 @@ type Project = {
   subtitle: string;
   intro: string;
   roleDescription: string;
-  image: string;
+  images: string[];
   githubLink: string;
 };

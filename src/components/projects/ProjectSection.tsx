@@ -21,7 +21,7 @@ const ProjectSection = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 3000,
+            delay: 10000,
             stopOnMouseEnter: true,
           }),
         ]}

@@ -7,10 +7,11 @@ import {
   Link,
 } from "@nextui-org/react";
 import { Card, CardContent, CardHeader } from "../ui/Card";
-import { CarouselItem } from "../ui/Carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/Carousel";
 import { Image } from "@nextui-org/react";
 import NextImage from "next/image";
 import Icons from "../common/Icons";
+import Autoplay from "embla-carousel-autoplay";
 
 interface Props {
   project: Project;
@@ -20,10 +21,10 @@ const ProjectItem = ({ project }: Props) => {
   return (
     <CarouselItem>
       <Card className="bg-clr-primary border-clr-grey-4 hover:border-clr-secondary rounded-md transition-all ease-in-out p-4 px-2 mb-2">
-        <CardContent className="flex justify-center items-center overflow-hidden">
-          <div className="p-0 m-0 bg-slate-900 rounded-lg">
+        <CardContent>
+          <div className="p-0 m-0 bg-slate-900 rounded-lg flex justify-center items-center overflow-hidden">
             <Image
-              src={project.image}
+              src={project.images[0]}
               alt={project.title}
               width={700}
               height={500}

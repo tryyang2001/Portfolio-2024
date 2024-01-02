@@ -1,6 +1,7 @@
 import { Image } from "@nextui-org/react";
 import { Button, Link, Spacer } from "@nextui-org/react";
 import Icons from "../common/Icons";
+import { resumeLink } from "@/models/ResumeLink";
 
 const Homepage = () => {
   return (
@@ -49,10 +50,10 @@ const Homepage = () => {
           <Button
             className="mx-2 bg-clr-secondary text-clr-white font-medium"
             as={Link}
-            href="https://drive.google.com/file/d/1wanGfOQJ1g48wF_NHP605LgSwqPvzLDu/view?usp=sharing"
+            href={resumeLink}
             target="_blank"
           >
-            Download CV <Icons.ArrowDownToLine />
+            Download Resume <Icons.ArrowDownToLine />
           </Button>
         </div>
       </div>

@@ -28,8 +28,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Providers>
-          {children}
           <Navbar />
+          {children}
           <Toaster />
         </Providers>
       </body>
